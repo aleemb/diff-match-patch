@@ -1116,7 +1116,7 @@ class Diff
      *
      * @return array Array of changes.
      */
-    protected function lineMode($text1, $text2, $deadline)
+    public function lineMode($text1, $text2, $deadline)
     {
         // Scan the text on a line-by-line basis first.
         list($text1, $text2, $lineArray) = $this->getToolkit()->linesToChars($text1, $text2);
